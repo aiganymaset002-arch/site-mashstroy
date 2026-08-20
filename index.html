@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta name="google-site-verification" content="TPlHERPwm4lWI7knUPYhBkcOqVLGnxR1xA4jUW2Pzaw" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARAI Engineering Group - Engineering the Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#1a1c1c",
+                      "on-tertiary-container": "#878686",
+                      "tertiary-fixed-dim": "#c8c6c6",
+                      "surface-dim": "#d9dadb",
+                      "outline-variant": "#c4c6cf",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#060606",
+                      "surface-container-low": "#f3f4f5",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "on-surface": "#191c1d",
+                      "on-secondary-container": "#626363",
+                      "primary": "#000613",
+                      "tertiary-container": "#1f1f1f",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "outline": "#74777f",
+                      "secondary": "#5d5e5f",
+                      "surface": "#f8f9fa",
+                      "surface-bright": "#f8f9fa",
+                      "on-primary-fixed-variant": "#2f486a",
+                      "surface-container-highest": "#e1e3e4",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#e3e2e2",
+                      "inverse-primary": "#afc8f0",
+                      "primary-container": "#001f3f",
+                      "tertiary-fixed": "#e4e2e1",
+                      "on-error-container": "#93000a",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#e0dfdf",
+                      "secondary-fixed-dim": "#c6c6c6",
+                      "primary-fixed-dim": "#afc8f0",
+                      "surface-container-high": "#e7e8e9",
+                      "on-primary": "#ffffff",
+                      "on-surface-variant": "#43474e",
+                      "inverse-on-surface": "#f0f1f2",
+                      "background": "#f8f9fa",
+                      "surface-container": "#edeeef",
+                      "on-primary-container": "#6f88ad",
+                      "on-secondary-fixed-variant": "#464747",
+                      "surface-variant": "#e1e3e4",
+                      "on-background": "#191c1d",
+                      "primary-fixed": "#d4e3ff",
+                      "surface-tint": "#476083",
+                      "on-primary-fixed": "#001c3a",
+                      "inverse-surface": "#2e3132"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "24px",
+                      "base": "8px",
+                      "container-max": "1440px",
+                      "gutter": "24px",
+                      "section-padding": "120px",
+                      "margin-desktop": "80px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Montserrat"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Montserrat"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .symbol-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Subtle grid background for industrial feel */
+        .bg-tech-grid {
+            background-image: 
+                linear-gradient(to right, rgba(0, 31, 63, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 31, 63, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .hover-expand {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .hover-expand:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px -5px rgba(0, 31, 63, 0.08);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-primary-container selection:text-white">
+<!-- TopNavBar (JSON Anchor) -->
+<header class="bg-surface/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant w-full transition-all duration-300" id="main-header">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="flex items-center gap-2 group" href="#">
+<img alt="ARAI Engineering Group Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRHPo3ZVwpljJGJhGy5ndYAuetrsxYBd5AXeZRfmrbu5fgUDHOW9ymKlNUDLcfac6HDNAWGioV-gGowjhWRR7zfnjlQ5vxWWrotp_le_QkxfgXiIdqQg6V8zwq8zSQuoU_Uojz2EVwTqkPc_cYS2nxoC63zh44uidNacEnesDXpyKzVd9FLdRSFx4BbtC0iCSDefEdl4_Vr--5LxROdKPjyHJ7WydoWjTDfYN9aG0jQvH8bID1Dn3yc3QHR0FsESUqTq3PEjwhfOo"/>
+<span class="font-headline-md text-headline-md font-black text-primary tracking-tighter uppercase hidden lg:block">ARAI Engineering Group</span>
+</a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-6 lg:gap-8">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#technology">Technology</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#products">Products</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#founders">Founders</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#factory">Factory</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#sustainability">Sustainability</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#news">News</a>
+</nav>
+<!-- Actions (Desktop) -->
+<div class="hidden md:flex items-center gap-4">
+<button class="font-label-md text-label-md text-primary hover:text-primary-container transition-colors">Careers</button>
+<button class="bg-primary text-white font-label-md text-label-md px-6 py-2.5 rounded-DEFAULT hover:w-[125%] hover-expand text-center whitespace-nowrap overflow-hidden transition-all duration-300">Contact Us</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center pt-20 pb-section-padding overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Industrial Conveyor System" class="w-full h-full object-cover object-center opacity-80" data-alt="A massive, high-tech industrial conveyor belt system stretching into a deep open-pit mine. The scene is sunlit with clear blue skies, highlighting the robust engineering of the steel structures and the raw earth. The mood is powerful, industrial, and highly advanced." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzlPF9ZYXDEIsyA4l8XJlz64g96q12cMdapBjttqp4iuNbLggiR_17Blx-qAwNiDW8uNZd2sSZlCRzCttgqCSqwz6Wk8c2K9Odv2zbazLfWkMJ0FxM90qhccDARwCEoah9Xat4vXWnXK7ncQHG77C1zSval0tONhx7T5mrbhm7DbI6VvvbgArI0GUePKRKI56Yfls_NufT3nstF3lPWvMM0g7ZXq1iOEpmLv3eXyDK8WGgI1Z9QHnv0ak1VDDV3bugGAXT61qFPzVc"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/95 via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 bg-surface-container/80 backdrop-blur-sm border border-outline-variant rounded-full px-4 py-1.5 mb-6 w-max">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Next-Gen Industrial Logistics</span>
+</div>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">
+                    Engineering the Future of Intelligent Conveyor Systems
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl leading-relaxed">
+                    Pioneering AI-driven monitoring, digital twin integration, and autonomous diagnostics for global heavy industry since 2013. We build the arteries of modern infrastructure.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-primary-container transition-colors flex items-center gap-2 hover-expand">
+                        Explore Technologies
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-transparent text-primary border border-outline font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-surface-container-low transition-colors flex items-center gap-2">
+                        View Case Studies
+                    </button>
+</div>
+</div>
+<!-- Hero Data Widget -->
+<div class="hidden lg:flex md:col-span-4 lg:col-span-5 items-end justify-end pb-12">
+<div class="bg-white/90 backdrop-blur-md border border-outline-variant p-6 w-full max-w-sm rounded-lg shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+<div class="flex justify-between items-center mb-4 border-b border-surface-variant pb-3">
+<span class="font-label-md text-label-md text-on-surface-variant">System Status</span>
+<span class="flex items-center gap-1 text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined symbol-filled text-[18px]">check_circle</span> Optimal
+                        </span>
+</div>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between text-caption font-caption text-on-surface-variant mb-1">
+<span>Global Uptime</span>
+<span class="font-bold text-primary">99.98%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[99.98%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption font-caption text-on-surface-variant mb-1">
+<span>Predictive Alerts Resolved</span>
+<span class="font-bold text-primary">12,450+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Identity Section (Bento Grid) -->
+<section class="py-section-padding bg-surface bg-tech-grid">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="mb-16 md:w-2/3">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Foundation of Precision</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Forged in the demands of modern infrastructure, ARAI Engineering Group represents a decade of relentless innovation in bulk material handling.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[minmax(200px,auto)]">
+<!-- Who We Are (Spans 8 cols) -->
+<div class="md:col-span-8 bg-white border border-outline-variant rounded-lg p-8 hover-expand relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[120px] text-primary">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4 relative z-10">Who We Are</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 relative z-10 max-w-2xl">
+                        Established in 2013, ARAI Engineering Group has evolved from a specialized mechanical design firm into a global leader in intelligent conveyor systems. We bridge the gap between heavy industrial mechanics and advanced digital monitoring, delivering robust physical infrastructure paired with sophisticated analytical oversight.
+                    </p>
+<div class="flex gap-4 relative z-10">
+<div class="bg-surface-container px-4 py-2 rounded-sm border border-outline-variant">
+<span class="block font-headline-md text-headline-md text-primary">10+</span>
+<span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider">Years Excellence</span>
+</div>
+<div class="bg-surface-container px-4 py-2 rounded-sm border border-outline-variant">
+<span class="block font-headline-md text-headline-md text-primary">40+</span>
+<span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider">Global Patents</span>
+</div>
+</div>
+</div>
+<!-- Mission (Spans 4 cols) -->
+<div class="md:col-span-4 bg-primary-container text-white border border-primary-container rounded-lg p-8 hover-expand flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4 text-inverse-primary">flag</span>
+<h3 class="font-headline-md text-headline-md mb-3">Our Mission</h3>
+<p class="font-body-md text-body-md text-inverse-primary/80">
+                            To redefine material handling through intelligent engineering, maximizing efficiency, safety, and operational continuity for the world's most demanding industrial environments.
+                        </p>
+</div>
+</div>
+<!-- Vision (Spans 5 cols) -->
+<div class="md:col-span-5 bg-white border border-outline-variant rounded-lg p-8 hover-expand">
+<span class="material-symbols-outlined text-4xl mb-4 text-primary">visibility</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Vision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        A future where industrial infrastructure operates autonomously, predicting maintenance needs before failure, and adapting in real-time to optimize global supply chains.
+                    </p>
+</div>
+<!-- Values (Spans 7 cols) -->
+<div class="md:col-span-7 bg-white border border-outline-variant rounded-lg p-8 hover-expand">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Core Values</h3>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<div>
+<span class="material-symbols-outlined text-3xl mb-2 text-primary">architecture</span>
+<h4 class="font-label-md text-label-md text-primary mb-1">Uncompromising Quality</h4>
+<p class="text-caption font-caption text-on-surface-variant">Engineered to withstand the harshest environments.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-3xl mb-2 text-primary">psychology</span>
+<h4 class="font-label-md text-label-md text-primary mb-1">Continuous Innovation</h4>
+<p class="text-caption font-caption text-on-surface-variant">Integrating the latest AI and material sciences.</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-3xl mb-2 text-primary">handshake</span>
+<h4 class="font-label-md text-label-md text-primary mb-1">Client Partnership</h4>
+<p class="text-caption font-caption text-on-surface-variant">Building enduring relationships through reliable performance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industry Survey & Data Section -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<span class="text-primary font-label-md text-label-md uppercase tracking-widest mb-2 block">Market Intelligence</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Why This Idea Was Created</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Driven by data, not assumption. We conducted a comprehensive survey of over 210 industry professionals across mining, manufacturing, and logistics to identify critical pain points in legacy systems.</p>
+</div>
+<!-- Survey Data Viz -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+<!-- Stat Card 1 -->
+<div class="bg-white border-t-2 border-t-primary-container border-l border-r border-b border-outline-variant p-6 rounded-b-lg shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-1 transition-transform">
+<div class="text-display-lg font-display-lg text-primary mb-2">83<span class="text-headline-md">%</span></div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Pilot Program Interest</h4>
+<p class="text-caption font-caption text-on-surface-variant">Professionals highly interested in piloting AI-driven predictive maintenance systems.</p>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-white border-t-2 border-t-primary-container border-l border-r border-b border-outline-variant p-6 rounded-b-lg shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-1 transition-transform">
+<div class="text-display-lg font-display-lg text-primary mb-2">84.6<span class="text-headline-md">%</span></div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Implementation Readiness</h4>
+<p class="text-caption font-caption text-on-surface-variant">Organizations actively seeking to implement digital twin technologies within 18 months.</p>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-white border-t-2 border-t-outline-variant border-l border-r border-b border-outline-variant p-6 rounded-b-lg shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-1 transition-transform">
+<div class="text-display-lg font-display-lg text-primary mb-2">62<span class="text-headline-md">%</span></div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">Downtime Reduction Goal</h4>
+<p class="text-caption font-caption text-on-surface-variant">Average targeted reduction in unscheduled downtime driving new investments.</p>
+</div>
+<!-- Stat Card 4 -->
+<div class="bg-white border-t-2 border-t-outline-variant border-l border-r border-b border-outline-variant p-6 rounded-b-lg shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-1 transition-transform">
+<div class="text-display-lg font-display-lg text-primary mb-2">4.2<span class="text-headline-md">x</span></div>
+<h4 class="font-label-md text-label-md text-on-surface mb-2">ROI Multiplier</h4>
+<p class="text-caption font-caption text-on-surface-variant">Expected return on investment when upgrading from reactive to predictive systems.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technologies Section (Image + Asymmetric Layout) -->
+<section class="py-section-padding bg-surface relative overflow-hidden" id="technology">
+<!-- Large Bleed Image -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[80%] hidden lg:block rounded-l-3xl overflow-hidden shadow-2xl">
+<img alt="Conveyor Technology Detail" class="w-full h-full object-cover" data-alt="Close up of a heavy duty conveyor belt carrying rough crushed rock. The focus is on the precision engineered metal rollers and side rails. The background is a vast industrial quarry under bright sunlight. The image conveys strength, durability, and high-performance engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAn9_Wz20QDu56zoXLQBDg4YMxFWhEPen1V2C8sU66mx2g_WpkZ2LEsxPzd06J954vlFgwtSyOgLI2y8d9Qmy3lnJHCjtA6dkr7DnbhY2snmlozBYYJeakq3qoSxcpSv8QFw9X9d8r3RdPKGIiwTXycHYu5s6soPSq_Tfmjyz9i5wGX1S7vu5I4k0nlL7edA4NpvERJ4HRRy_SJBH-2NrKu8Yx2d43bdUTYlfJqdA3xsNfjtbKskA3hx8oWTnMti4Do8sX25p94Wh2"/>
+<div class="absolute inset-0 bg-gradient-to-l from-transparent to-surface"></div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="lg:w-1/2 lg:pr-16">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-12">Intelligent Technologies</h2>
+<div class="space-y-8">
+<!-- Tech Item 1 -->
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center bg-white group-hover:bg-primary group-hover:border-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">memory</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">AI Monitoring Systems</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">Continuous acoustic and vibrational analysis algorithms that detect micro-fractures in rollers and belt wear before catastrophic failure occurs.</p>
+<div class="inline-flex items-center gap-1.5 text-caption font-caption font-semibold text-primary uppercase bg-surface-container px-2 py-1 rounded-sm border border-outline-variant">
+<span class="material-symbols-outlined text-[14px]">sensors</span> Real-time Data
+                            </div>
+</div>
+</div>
+<!-- Tech Item 2 -->
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center bg-white group-hover:bg-primary group-hover:border-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">view_in_ar</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Digital Twin Integration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3">Virtual replica of the physical conveyor network allowing operators to simulate load changes, run stress tests, and optimize routing in a risk-free digital environment.</p>
+<div class="inline-flex items-center gap-1.5 text-caption font-caption font-semibold text-primary uppercase bg-surface-container px-2 py-1 rounded-sm border border-outline-variant">
+<span class="material-symbols-outlined text-[14px]">model_training</span> Simulation Ready
+                            </div>
+</div>
+</div>
+<!-- Tech Item 3 -->
+<div class="flex gap-6 group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center bg-white group-hover:bg-primary group-hover:border-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">analytics</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Predictive Diagnostics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Cloud-based analytics engine that processes historical and live data to accurately forecast component lifespan, allowing for scheduled maintenance during planned downtime.</p>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<button class="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-primary-container transition-colors hover-expand">
+                        Download Technical Specifications
+                    </button>
+</div>
+</div>
+<!-- Mobile Image fallback -->
+<div class="mt-12 lg:hidden rounded-xl overflow-hidden border border-outline-variant h-[300px]">
+<img alt="Conveyor Technology Detail" class="w-full h-full object-cover" data-alt="Close up of a heavy duty conveyor belt carrying rough crushed rock. The focus is on the precision engineered metal rollers and side rails. The background is a vast industrial quarry under bright sunlight. The image conveys strength, durability, and high-performance engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAn9_Wz20QDu56zoXLQBDg4YMxFWhEPen1V2C8sU66mx2g_WpkZ2LEsxPzd06J954vlFgwtSyOgLI2y8d9Qmy3lnJHCjtA6dkr7DnbhY2snmlozBYYJeakq3qoSxcpSv8QFw9X9d8r3RdPKGIiwTXycHYu5s6soPSq_Tfmjyz9i5wGX1S7vu5I4k0nlL7edA4NpvERJ4HRRy_SJBH-2NrKu8Yx2d43bdUTYlfJqdA3xsNfjtbKskA3hx8oWTnMti4Do8sX25p94Wh2"/>
+</div>
+</div>
+</section>
+<!-- Founders Section -->
+<section class="py-section-padding bg-surface-container-lowest" id="founders">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Leadership &amp; Vision</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                The pioneering minds driving the intersection of heavy engineering, artificial intelligence, and sustainable industrial modernization.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+<!-- Founder 1 -->
+<article class="flex flex-col">
+<div class="relative w-full aspect-[3/4] mb-8 bg-surface-container-highest overflow-hidden border border-outline-variant">
+<img alt="Sarsenova Gulshat" class="w-full h-full object-cover object-top grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh0te0z9hwnJR0nsett7X_dDjO6BEPEHUV4cMlfjTgipzeHC_Mr8nPhxBbjVCm6TM4Ak8X-mf6F15v6sQoHl8PLjOU5lwJZhJv_uUPLmPLiTd3HW_5bo22K1eCSps5soOXCDx1pJ0-uYWEVn2hkXGWLnUEsgCkFfVG1PAN3UGHduf6MZnroy70Uo3PIyyN3Okt3HaJ17sMgatPZ86F4aqePP_WSNuh3YCKNeCbSHp7uTVgZ6LyuVstsZqf822yYo8rkO_X7dW1r_pZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+<a class="text-white flex items-center gap-2 font-label-md text-label-md" href="#">
+<span>View Academic Profile</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-3 mb-2">
+<span class="bg-surface-container-highest text-primary font-caption text-caption px-2 py-1 uppercase tracking-wider">Strategy &amp; Vision Lead</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Sarsenova Gulshat</h3>
+<h4 class="font-body-lg text-body-lg text-secondary mb-6 pb-6 border-b border-outline-variant">Co-Founder &amp; CEO</h4>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>An esteemed engineering researcher and industry leader with over 13 years of applied engineering and construction experience, complementing two decades of academic excellence.</p>
+<p>As a Corresponding Member of the Academy, Gulshat guides the overarching strategic vision of ARAI Engineering Group. Her multifaceted leadership extends to serving as the CEO of the ARAI Inclusive School, University, and Academy, fostering the next generation of engineering talent.</p>
+<div class="pt-4 mt-6 border-t border-outline-variant border-dashed">
+<h5 class="font-label-md text-label-md text-primary mb-3">Key Focus Areas</h5>
+<ul class="space-y-2">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-2 text-base mt-1">architecture</span>
+<span>Industrial Modernization Strategy</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-2 text-base mt-1">school</span>
+<span>Academic &amp; Institutional Leadership</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+<!-- Founder 2 -->
+<article class="flex flex-col md:mt-24">
+<div class="relative w-full aspect-[3/4] mb-8 bg-surface-container-highest overflow-hidden border border-outline-variant shadow-[0_12px_40px_-15px_rgba(0,31,63,0.15)]">
+<img alt="Aiganym Aset" class="w-full h-full object-cover object-top grayscale-[20%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqYWkpmG_hy-LAZqYcp_RxvAFw6LHjjSWX0Ca4omOA_hna6MlHc-RI1-7mEEjl0a2j-ruN-IQmHJC-Y7Trv9YSbUOV0w8VN3Rppabz457kT3MudACC1Ik0udPbiDPPvE046FRYkUREvYj0tdaoETV-6yv0N70wVpyHm9fGFHIIMzqP6IYkZ2j7d2UhaLy2EIrGfGW7k5-RzVQACJHyY05qkvqZSzHutR_0UPZ0Xm_D_uZbA09-lRMm5aw4-v1vo7-zoPcmIKW-VPpf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+<a class="text-white flex items-center gap-2 font-label-md text-label-md" href="#">
+<span>View Research Publications</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col flex-grow">
+<div class="flex items-center gap-3 mb-2">
+<span class="bg-primary text-white font-caption text-caption px-2 py-1 uppercase tracking-wider">Digital Product &amp; AI Lead</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Aiganym Aset</h3>
+<h4 class="font-body-lg text-body-lg text-secondary mb-6 pb-6 border-b border-outline-variant">Co-Founder, Researcher &amp; Innovation Lead</h4>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<p>A dynamic researcher and technical innovator leading the digital transformation initiatives at ARAI. Aiganym operates at the nexus of artificial intelligence and heavy industrial machinery.</p>
+<p>She is the primary architect and creator of the intelligent air-cushion conveyor modernization project, a flagship innovation that redefines efficiency and telemetry in bulk material handling. Her research bridges theoretical AI models with rigorous industrial application.</p>
+<div class="pt-4 mt-6 border-t border-outline-variant border-dashed">
+<h5 class="font-label-md text-label-md text-primary mb-3">Key Focus Areas</h5>
+<ul class="space-y-2">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-2 text-base mt-1">memory</span>
+<span>AI Integration &amp; Telemetry Systems</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary-container mr-2 text-base mt-1">conveyor_belt</span>
+<span>Air-Cushion Conveyor Optimization</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Call to Action / Research Hub -->
+<section class="bg-surface-container-low py-section-padding border-y border-outline-variant">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">menu_book</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Scientific Publications &amp; Research</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+            Explore the academic foundations and technical whitepapers authored by our leadership team, detailing the methodologies behind our intelligent conveyor systems.
+        </p>
+<button class="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-primary-container transition-colors hover-expand inline-flex items-center gap-2">
+            Access Research Repository
+        </button>
+</div>
+</section>
+<!-- Footer (JSON Anchor) -->
+<footer class="bg-primary border-t border-primary-container full-width py-section-padding">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="md:col-span-1 mb-8 md:mb-0">
+<span class="font-headline-md text-headline-md font-bold text-white mb-6 block">ARAI Engineering Group</span>
+<p class="font-body-md text-body-md text-on-primary-container mb-6 max-w-xs">
+                    Engineering the Future of intelligent, resilient, and autonomous material handling systems worldwide.
+                </p>
+<p class="font-caption text-caption text-on-primary-container">
+                    © 2024 ARAI Engineering Group. Engineering the Future. All Rights Reserved.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 tracking-widest uppercase opacity-50">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-200 block" href="#">Research</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-200 block" href="#">Factory</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-200 block" href="#">Quality Assurance</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-200 block" href="#">Global Locations</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 tracking-widest uppercase opacity-50">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-primary-container hover:text-white hover:translate-x-1 transition-all duration-200 block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<!-- Contact/Newsletter Column -->
+<div class="md:col-span-1">
+<h4 class="font-label-md text-label-md text-white mb-6 tracking-widest uppercase opacity-50">Connect</h4>
+<div class="flex items-center gap-4 mb-6">
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container hover:text-white hover:bg-surface-tint transition-colors" href="#">
+<span class="material-symbols-outlined">language</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container hover:text-white hover:bg-surface-tint transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle header shadow on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-[0_4px_30px_rgb(0,0,0,0.05)]');
+                header.classList.replace('bg-surface/90', 'bg-surface/95');
+            } else {
+                header.classList.remove('shadow-[0_4px_30px_rgb(0,0,0,0.05)]');
+                header.classList.replace('bg-surface/95', 'bg-surface/90');
+            }
+        });
+    </script>
+</body></html>
